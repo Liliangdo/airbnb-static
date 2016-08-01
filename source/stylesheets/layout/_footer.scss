@@ -1,28 +1,27 @@
 .footer {
-  background-color: #333333;
+  background-color: $gray-dark;
   height: 100px;
   padding: 40px;
-
-}
-.footer a {
-  color: white;
-  font-size: 25px;
-  padding-right: 5px;
+  a {
+    color: white;
+    font-size: 25px;
+    padding-right: 5px;
+    &:hover {
+      color: $blue;
+      transition: all 300ms ease-in-out;
+    }
+  }
+  .fa:hover {
+    transform: scale(1.50);
+  }
 }
 
 .footer-text-right {
   color: white;
-}
-.footer a:hover {
-  color: #3071A9;
-  transition: all 300ms ease-in-out;
+
+  &:hover {
+    color: $blue;
+    transition: all 300ms ease-in-out;
+  }
 }
 
-.footer .fa:hover {
-  transform: scale(1.50);
-}
-
-.footer-text-right:hover {
-  color: #3071A9;
-  transition: all 300ms ease-in-out;
-}
